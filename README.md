@@ -51,3 +51,4 @@ it is a very simple and efficient web application to operate.
    ```sh
    git clone https://github.com/JaydeeCodesHoops/Church-Event-Management-Application.git"# Church-Event-Management-Application" 
 "# Church-Event-Management-Application" 
+"# Church-Event-Management-Application" 
