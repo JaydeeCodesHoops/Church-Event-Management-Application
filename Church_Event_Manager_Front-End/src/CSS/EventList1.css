@@ -1,0 +1,105 @@
+.welcomeA{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: '100vh';
+    position: sticky;
+    top: 0;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+  }
+
+.btns{
+    margin-right: 0;
+    display: flex;
+}
+
+label{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: medium;
+}
+
+.AdminForm{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(133, 14, 14);
+    border: 3px solid yellow;
+    border-radius: 15px;
+    width: 50vw;
+    height: 70vh; 
+}
+
+input{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+textarea{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#updateB{
+  margin: 20px;
+}
+
+#viewhide{
+  margin-top: 20px;
+}
+
+.load-error{
+  margin-top: 20px;
+}
+
+.eventWrapper1{
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 3px solid yellow;
+  border-radius: 15px;
+  background-color: #b45353;
+  width: 75vw;
+}
+
+.viewEvents1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eventItemAdmin{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editDeleteBtns button{
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.editDeleteBtns button:hover{
+  background-color: #1eff00;
+}
+
+.bodyA{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adminBGimage{
+  background-image: url('/src/assets/Foundation\ Unity-Cropped.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow: auto;
+}

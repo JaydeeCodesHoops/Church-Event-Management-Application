@@ -1,0 +1,6 @@
+@Church_Event_Manager_HostAddress = http://localhost:5231
+
+GET {{Church_Event_Manager_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+}
+
+li{
+  list-style: none;
+}
+
+.head{
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: '100vh';
+  position: sticky;
+  top: 0;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+
+.reghead{
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: '100vh';
+  position: sticky;
+  top: 0;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+
+.loginBGimage{
+  background-image: url('/src/assets/Foundation\ Unity-Cropped.jpg');
+  background-size: cover;
+  /* background-position: center; */
+  height: 100vh;
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: '100vh';
+  background-color: hsl(200, 3%, 79%);
+}
+
+.regBGimage{
+  background-image: url('/src/assets/Foundation\ Unity-Cropped.jpg');
+  background-size: cover;
+  /* background-position: center; */
+  height: 100vh;
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: '100vh';
+  background-color: hsl(200, 3%, 79%);
+}
+
+.login{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35vw;
+  background-color: maroon;
+  border: 3px solid yellow;
+  border-radius: 15px;
+  color: rgb(165, 155, 61); 
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.register{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35vw;
+  background-color: maroon;
+  border: 3px solid yellow;
+  border-radius: 15px;
+  color: rgb(165, 155, 61);
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.registerPage{
+  background-image: url('/src/assets/Foundation\ Unity-Cropped.jpg');
+  background-size: cover;
+    /* background-position: center; */
+    height: 100vh;
+    padding: 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(200, 3%, 79%);
+}
+
+.registerTitle{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: white;
+  text-decoration: underline;
+}
+
+.loginTitle{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: white;
+  text-decoration: underline;
+}
+
+.email{
+  font-size: 30px;
+}
+
+.password{
+  font-size: 30px;
+}
+
+button{
+  background-color: hsl(60, 100%, 50%);
+  margin: auto;
+  padding: 10px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+button:hover{
+  background-color: yellowgreen;
+  transform: translateY(4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nameInput{
+  display: flex;
+  padding: 10px;
+}
+
+.emailInput{
+  display: flex;
+  padding: 10px;
+}
+
+.passwordInput{
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.error-Success{
+  margin-bottom: 20px;
+}
+
+.Reg-Home{
+  display: flex;
+}
+
+.error{
+  margin-bottom: 20px;
+}
+
+.Login-Home{
+  display: flex;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+form div{
+  margin-bottom: 15px;
+}

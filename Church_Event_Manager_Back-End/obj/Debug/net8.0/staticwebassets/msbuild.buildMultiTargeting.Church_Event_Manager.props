@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Church_Event_Manager.props" />
+</Project>

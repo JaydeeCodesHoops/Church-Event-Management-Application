@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jaden\\source\\repos\\Church_Event_Manager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{201C5B72-9D97-45ED-A75B-608AA0839C15}|Church_Event_Manager.csproj|c:\\users\\jaden\\source\\repos\\church_event_manager\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{201C5B72-9D97-45ED-A75B-608AA0839C15}|Church_Event_Manager.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{201C5B72-9D97-45ED-A75B-608AA0839C15}|Church_Event_Manager.csproj|c:\\users\\jaden\\source\\repos\\church_event_manager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{201C5B72-9D97-45ED-A75B-608AA0839C15}|Church_Event_Manager.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{201C5B72-9D97-45ED-A75B-608AA0839C15}|Church_Event_Manager.csproj|c:\\users\\jaden\\source\\repos\\church_event_manager\\controllers\\eventmodelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{201C5B72-9D97-45ED-A75B-608AA0839C15}|Church_Event_Manager.csproj|solutionrelative:controllers\\eventmodelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{201C5B72-9D97-45ED-A75B-608AA0839C15}|Church_Event_Manager.csproj|c:\\users\\jaden\\source\\repos\\church_event_manager\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{201C5B72-9D97-45ED-A75B-608AA0839C15}|Church_Event_Manager.csproj|solutionrelative:controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 197,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Jaden\\source\\repos\\Church_Event_Manager\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Jaden\\source\\repos\\Church_Event_Manager\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAQwAoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T11:43:48.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jaden\\source\\repos\\Church_Event_Manager\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Jaden\\source\\repos\\Church_Event_Manager\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABYAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:59:13.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AttendanceController.cs",
+              "DocumentMoniker": "C:\\Users\\Jaden\\source\\repos\\Church_Event_Manager\\Controllers\\AttendanceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AttendanceController.cs",
+              "ToolTip": "C:\\Users\\Jaden\\source\\repos\\Church_Event_Manager\\Controllers\\AttendanceController.cs",
+              "RelativeToolTip": "Controllers\\AttendanceController.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAcwG8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:04:28.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventModelsController.cs",
+              "DocumentMoniker": "C:\\Users\\Jaden\\source\\repos\\Church_Event_Manager\\Controllers\\EventModelsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventModelsController.cs",
+              "ToolTip": "C:\\Users\\Jaden\\source\\repos\\Church_Event_Manager\\Controllers\\EventModelsController.cs",
+              "RelativeToolTip": "Controllers\\EventModelsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T07:11:10.061Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

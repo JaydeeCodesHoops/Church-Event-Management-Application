@@ -1,0 +1,115 @@
+.welcomeC{
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: '100vh';
+    position: sticky;
+    top: 0;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  
+#btn2{
+    margin-right: 0;
+  }
+
+  .eventWrapper{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 3px solid yellow;
+    border-radius: 8px;
+    background-color: #b45353;
+    width: 75vw;
+  }
+
+  .userWrapper{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 3px solid yellow;
+    border-radius: 8px;
+    background-color: #b45353;
+    width: 75vw;
+  }
+
+  .viewEvents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .viewUsers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .attendanceBtns button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.attendanceBtns button:hover{
+  background-color: #1eff00;
+}
+
+.Hp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.eventList{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.userList{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Adds spacing below the filter bar */
+}
+
+.filterInput {
+  padding: 8px;
+  width: 50%; /* Adjust width as needed */
+  max-width: 400px; /* Optional: restrict maximum width */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center; /* Centers placeholder text */
+}
+
+.userBGimage{
+  background-image: url('/src/assets/Foundation\ Unity-Cropped.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow: auto;
+}
+
+.congregantBGimage{
+  background-image: url('/src/assets/Foundation\ Unity-Cropped.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow: auto;
+}
