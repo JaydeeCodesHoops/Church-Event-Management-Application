@@ -41,11 +41,25 @@
     margin-top: 30px;
     justify-content: center;
     align-items: top;
-    height: 50vh; /* Full height of viewport */
-    width: 50vw;  /* Full width of viewport */
+    /* height: 50%; */          /*I REMOVED HEIGHT FOR THE DIV TO CHANGE ITS HEIGHT DEPENDING ON THE AMOUNT OF CONTENTS INSIDE OF IT.*/
+    width: 50%;  /* Full width of viewport */
     background-color: #ffffff;
     border: 3px solid yellow;
     border-radius: 15px;
+
+
+  /* Allow vertical scrolling */
+  max-height: 50%; /* Limits height to viewport */
+  overflow-y: auto; /* Enables scrolling when needed */
+
+    /* Responsive height */
+      /* min-height: 100px; 
+      max-height: 80vh; 
+      overflow-y: auto;  */
+
+    /* display: flex;
+      flex-direction: column;
+      gap: 10px; */
   }
 
   .heading{
