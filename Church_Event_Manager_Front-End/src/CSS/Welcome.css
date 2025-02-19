@@ -1,11 +1,11 @@
 
 .welcomepage {
   display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  flex-direction: column; /* Stacks elements vertically */
-  height: 100vh;
-  width: 100vw; /* Fix width issue */
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column; 
+  height: 80vh;
+  width: 100vw; 
   background-image: url('/src/assets/worship.jpg');
   background-size: cover;
   background-color: hsl(200, 3%, 79%);
@@ -18,7 +18,11 @@
     transition: background-color 0.3s, transform 0.3s;
     font-size: 16px;
   }
-  .buttons :hover{
+  .button1 :hover{
+    color:brown;
+    transform: scale(1.1);
+  }
+  .button2 :hover{
     color:brown;
     transform: scale(1.1);
   }
@@ -37,31 +41,7 @@
     align-items: center;
   }
 
-  .aboutModal{
-    margin-top: 30px;
-    justify-content: center;
-    align-items: top;
-    /* height: 50%; */          /*I REMOVED HEIGHT FOR THE DIV TO CHANGE ITS HEIGHT DEPENDING ON THE AMOUNT OF CONTENTS INSIDE OF IT.*/
-    width: 50%;  /* Full width of viewport */
-    background-color: #ffffff;
-    border: 3px solid yellow;
-    border-radius: 15px;
-
-
-  /* Allow vertical scrolling */
-  max-height: 50%; /* Limits height to viewport */
-  overflow-y: auto; /* Enables scrolling when needed */
-
-    /* Responsive height */
-      /* min-height: 100px; 
-      max-height: 80vh; 
-      overflow-y: auto;  */
-
-    /* display: flex;
-      flex-direction: column;
-      gap: 10px; */
-  }
-
+ 
   .heading{
     color: yellow;
   }

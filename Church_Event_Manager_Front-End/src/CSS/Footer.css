@@ -1,0 +1,38 @@
+.footer{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutModal{
+    justify-content: center;
+    align-items: top;
+    /* height: 50%; */          /*I REMOVED HEIGHT FOR THE DIV TO CHANGE ITS HEIGHT DEPENDING ON THE AMOUNT OF CONTENTS INSIDE OF IT.*/
+    width: 50%;  /* Full width of viewport */
+    /* background-color: #ffffff; */
+    border: 3px solid yellow;
+    border-radius: 15px;
+    margin-top: 120px;
+    background-image: url('/src/assets/worship.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin-bottom: 30px;
+
+  /* Allow vertical scrolling */
+  max-height: 50%; /* Limits height to viewport */
+  overflow-y: auto; /* Enables scrolling when needed */
+
+    /* Responsive height */
+      /* min-height: 100px; 
+      max-height: 80vh; 
+      overflow-y: auto;  */
+
+    /* display: flex;
+      flex-direction: column;
+      gap: 10px; */
+  }
