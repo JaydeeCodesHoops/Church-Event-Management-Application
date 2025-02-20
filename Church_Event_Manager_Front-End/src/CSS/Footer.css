@@ -1,38 +1,50 @@
-.footer{
-    background-color: white;
-    color: black;
+.footAboutBox{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: yellow;
 }
 
-.aboutModal{
+.aboutBoxMiddle{
+    flex: 2;
     justify-content: center;
     align-items: top;
-    /* height: 50%; */          /*I REMOVED HEIGHT FOR THE DIV TO CHANGE ITS HEIGHT DEPENDING ON THE AMOUNT OF CONTENTS INSIDE OF IT.*/
-    width: 50%;  /* Full width of viewport */
-    /* background-color: #ffffff; */
-    border: 3px solid yellow;
-    border-radius: 15px;
-    margin-top: 120px;
     background-image: url('/src/assets/worship.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    margin-bottom: 30px;
+    /* Allow vertical scrolling */
+    overflow-y: auto; /* Enables scrolling when needed */
+    text-align: center;
+}
 
-  /* Allow vertical scrolling */
-  max-height: 50%; /* Limits height to viewport */
-  overflow-y: auto; /* Enables scrolling when needed */
+.leftBox{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+}
 
-    /* Responsive height */
-      /* min-height: 100px; 
-      max-height: 80vh; 
-      overflow-y: auto;  */
+.rightBox{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+}
 
-    /* display: flex;
-      flex-direction: column;
-      gap: 10px; */
-  }
+.footHeader{
+    padding: 20px;
+}
+
+.heading{
+    color: yellow;
+}
+
+.copyRight{
+    height: 10vh;
+    background-color: black;
+    color: white;
+}

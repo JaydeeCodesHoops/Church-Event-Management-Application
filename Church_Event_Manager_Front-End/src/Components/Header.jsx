@@ -15,7 +15,6 @@ export default function Header(){
 
     return(
     <>
-       
             <div className="buttons">
                 <div className="button1">
                     <button id="btn1" onClick={handleRegister}>Register</button>
