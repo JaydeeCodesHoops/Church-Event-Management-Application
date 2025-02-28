@@ -1,16 +1,41 @@
 
 .welcomepage {
   display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  flex-direction: column; 
-  height: 100vh;
-  width: 100vw; 
-  background-image: url('/src/assets/worship.jpg');
-  background-size: cover;
-  background-color: hsl(200, 3%, 79%);
+  flex-direction: column;
+
+  background-color: white;
 }
 
+.insideCard{
+  margin: auto;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  border: 3px solid black;
+  border-radius: 15px;
+  width: 950px;
+  height: 700px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.insideCard:hover{
+  transform: rotateY(180deg);
+}
+
+.front-image, .back-text{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back-text{
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
 
   #btn1{
     background-color: yellow;
@@ -45,3 +70,42 @@
   .heading{
     color: yellow;
   }
+
+
+
+
+
+
+  .carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Almost full screen */
+}
+
+.carousel {
+    display:  flex;
+    width: 100%;  /* Total width of the whole carousel */
+    height: 80%; /* Total height */
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.image-container {
+  position: absolute;
+  width: 300px;  /* Each image container size */
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s ease;
+  margin: auto;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}

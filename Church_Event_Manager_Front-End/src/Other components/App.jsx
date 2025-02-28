@@ -7,6 +7,8 @@ import EventList1 from '../Pages/EventList1';
 import EventList2 from '../Pages/EventList2';
 import Attendance from '../Pages/Attendance';
 import Users from '../Pages/Users';
+import Contact from '../Pages/Contact';
+import Gallery from '../Pages/Gallery';
 import '../CSS/App.css'
 
 function App(){
@@ -21,6 +23,8 @@ function App(){
               <Route path="/congregant" element={<EventList2/>}/>
               <Route path="/attendance" element={<Attendance/>}/>
               <Route path="/users" element={<Users/>}/>
+              <Route path="/gallery" element={<Gallery/>}/>
+              <Route path="/contact" element={<Contact/>}/>
             </Routes>
           </Router>
     </div>
