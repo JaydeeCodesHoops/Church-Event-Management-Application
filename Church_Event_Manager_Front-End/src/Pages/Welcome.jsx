@@ -14,12 +14,12 @@ import '/src/CSS/Welcome.css';
 function Welcome (){
 
     const images = [
-        { id: 1, src: image },
+        { id: 1, src: image2 },
         { id: 2, src: image2 },
-        { id: 3, src: image3 },
-        { id: 4, src: image4 },
-        { id: 5, src: image5 },
-        { id: 6, src: image6 }
+        { id: 3, src: image2 },
+        { id: 4, src: image2 },
+        { id: 5, src: image2 },
+        { id: 6, src: image2 }
     ];
 
     const [currentPositions, setCurrentPositions] = useState([
@@ -50,11 +50,11 @@ function Welcome (){
     const getPositionStyles = (position) => {
         switch (position) {
             case 'left':
-                return { x: '-200%', scale: 0.5, opacity: 0.8 };
+                return { x: '-200%', scale: 1, opacity: 2 };
             case 'center':
-                return { x: '-0%', scale: 1, opacity: 1 };
+                return { x: '-0%', scale: 2, opacity: 2 };
             case 'right':
-                return { x: '200%', scale: 0.5, opacity: 0.8 };
+                return { x: '200%', scale: 1, opacity: 2 };
             default:
                 return {};
         }

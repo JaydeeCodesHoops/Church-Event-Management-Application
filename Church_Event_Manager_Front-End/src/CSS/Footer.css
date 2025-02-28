@@ -23,7 +23,6 @@
 
 .leftBox{
     flex: 1;
-    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +31,6 @@
 
 .rightBox{
     flex: 1;
-    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,4 +53,15 @@
     height: 10vh;
     background-color: brown;
     color: white;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-image{
+    width: 200px;
+    height:200px;
 }
