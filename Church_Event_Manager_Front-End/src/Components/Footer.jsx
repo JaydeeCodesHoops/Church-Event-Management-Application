@@ -7,7 +7,7 @@ import '../CSS/Footer.css'
 export default function Footer(){
     return(
     <>
-
+        <div style={{backgroundColor: "black", height: "60px"}}></div>
         <div className="footAboutBox">
             <div className="leftBox">
                 <img className="footer-image" src={image} alt="CTC-image"/>
@@ -25,7 +25,7 @@ export default function Footer(){
                 </div>
             </div>
             <div className="rightBox">
-                <img className="footer-image" src={image2} alt="CTC-image"/>
+                <img className="footer-image" src={image2} alt="Youth-logo"/>
             </div>
         </div>
         <div className="moreAbout">

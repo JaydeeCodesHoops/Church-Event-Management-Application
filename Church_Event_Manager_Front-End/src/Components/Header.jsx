@@ -13,22 +13,30 @@ export default function Header(){
         navigate('/login');
     };
 
+    const handleGallery = () => {
+        navigate('/gallery');
+    };
+
+    const handleContact = () => {
+        navigate('/contact');
+    };
+
     return(
     <>
             <div className="buttons">
                 <div className="button1">
                     <button id="btn1" onClick={handleRegister}>Register</button>
                 </div>
-                <a href="/gallery" target="_blank" rel="noopener noreferrer" style={{color: "white"}}>
-                    <p>Gallery</p>
-                </a>
-                <div style={{backgroundColor: "black", color: "yellow", display: "flex", alignItems: "center", justifyContent: "center"}}>
+                <div className="button3">
+                    <button id="btn3" onClick={handleGallery}>Gallery</button>
+                </div>
+                <div className="hHeading">
                     <img src={logo} alt="" style={{height:'70px',width:'70px'}} />
                     <h1>Church Event Management Application</h1>
                 </div>
-                <a href="/contact" target="_blank" rel="noopener noreferrer" style={{color: "white"}}>
-                    <p>Contact</p>
-                </a>
+                <div className="button4">
+                    <button id="btn4" onClick={handleContact}>Contact</button>
+                </div>
                 <div className="button2">
                     <button id="btn2" onClick={handleLogin}>Login</button>
                 </div>

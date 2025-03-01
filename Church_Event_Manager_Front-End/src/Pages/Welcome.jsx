@@ -2,24 +2,19 @@ import React, { useState, useEffect } from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import { motion } from 'framer-motion';
-
-import image from '../assets/pngtree-white-cross.jpg'
-import image2 from '../assets/YouthHike.jpg'
-import image3 from '../assets/worship.jpg'
-import image4 from '../assets/crosses-jesus-white.jpg'
-import image5 from '../assets/come-to-church.jpg'
-import image6 from '../assets/logo.png'
+import { Cardone, Cardtwo, Cardthree } from '../Components/Cards';
+import VerseOfTheDay from '../Components/VerseOdTheDay';
 import '/src/CSS/Welcome.css';
 
-function Welcome (){
+export default function Welcome (){
 
-    const images = [
-        { id: 1, src: image2 },
-        { id: 2, src: image2 },
-        { id: 3, src: image2 },
-        { id: 4, src: image2 },
-        { id: 5, src: image2 },
-        { id: 6, src: image2 }
+    const cards = [
+        { id: 1, component: <Cardone/> },
+        { id: 2, component: <Cardtwo/> },
+        { id: 3, component: <Cardthree/> },
+        { id: 4, component: <Cardone/> },
+        { id: 5, component: <Cardtwo/> },
+        { id: 6, component: <Cardthree/> }
     ];
 
     const [currentPositions, setCurrentPositions] = useState([
@@ -35,7 +30,7 @@ function Welcome (){
                     if (pos.position === 'left') return { ...pos, position: 'center' };
                     if (pos.position === 'center') return { ...pos, position: 'right' };
                     if (pos.position === 'right') {
-                        const nextIndex = (pos.index + 3) % images.length;
+                        const nextIndex = (pos.index + 3) % cards.length;
                         return { position: 'left', index: nextIndex };
                     }
                     return pos;
@@ -44,7 +39,7 @@ function Welcome (){
         }, 3000);
     
         return () => clearInterval(interval);
-    }, [images]);
+    }, [cards]);
     
     // Helper function to calculate position styling
     const getPositionStyles = (position) => {
@@ -70,15 +65,18 @@ function Welcome (){
                 <div className="carousel">
                     {currentPositions.map(({ position, index }) => (
                         <motion.div
-                            key={images[index].id}
+                            key={cards[index].id}
                             className="image-container"
                             initial={getPositionStyles(position)}
                             animate={getPositionStyles(position)}
                             transition={{ duration: 1 }}
                         >
-                            <img className="carousel-image" src={images[index].src} alt={`Image ${images[index].id}`} />
+                            {cards[index].component}
                         </motion.div>
                     ))}
+                </div>
+                <div className="verseOfToday">
+                    <VerseOfTheDay/>
                 </div>
             </div>
         </div>
@@ -88,7 +86,6 @@ function Welcome (){
         </>
     );
  }
- export default Welcome;
 
 
             {/* <div className="insideCard">

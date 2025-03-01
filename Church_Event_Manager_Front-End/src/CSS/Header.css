@@ -6,4 +6,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family:  sans-serif;
+  }
+
+  #btn1, #btn2, #btn3, #btn4{
+    background-color: yellow;
+    cursor: pointer;
+    /* transition: background-color 0.3s, transform 0.3s; */
+    font-size: 16px;
+  }
+  .button1 :hover, .button2 :hover, .button3 :hover, .button4 :hover{
+    /* color:brown; */
+    /* transform: scale(1.1); */
+    background-color: yellow;
+  }
+
+
+  .hHeading{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: large;
   }

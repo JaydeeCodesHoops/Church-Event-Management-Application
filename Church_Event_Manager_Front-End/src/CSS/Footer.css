@@ -16,6 +16,7 @@
     overflow-y: auto; /* Enables scrolling when needed */
     text-align: center;
     margin: auto;
+    margin-top: 30px;
     background-color: brown;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
