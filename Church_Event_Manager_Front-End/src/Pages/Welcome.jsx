@@ -36,7 +36,7 @@ export default function Welcome (){
                     return pos;
                 });
             });
-        }, 3000);
+        }, 8500);
     
         return () => clearInterval(interval);
     }, [cards]);
@@ -61,22 +61,33 @@ export default function Welcome (){
             <Header/>
         </div>
         <div className="welcomepage">
-            <div className="carousel-wrapper">
-                <div className="carousel">
+            <div className="cards-wrapper">
+                <div className="card-slide-show">
                     {currentPositions.map(({ position, index }) => (
                         <motion.div
                             key={cards[index].id}
-                            className="image-container"
+                            className="individual-card"
                             initial={getPositionStyles(position)}
                             animate={getPositionStyles(position)}
-                            transition={{ duration: 1 }}
+                            transition={{ duration: 0.5 }}
                         >
                             {cards[index].component}
                         </motion.div>
                     ))}
                 </div>
+                <div className="description">
+                    <p>Imagine a application that makes everyone's experience much easier to just book your seat at an event that you would like to attend to.<br/>
+                       Everything is so much easier with the 
+                       <span style={{fontWeight: "bold", color: "yellow", textShadow: "0 0 2px #000, 0 0 5px #000, 0 0 10px #000, 0 0 2px #000", marginLeft: "5px", marginRight: "3px"}}>Church Event Management Application</span>,
+                       marking your attendance  by just one click!
+                    </p><br/>
+                    <h2>--- Enjoy the Booking to Enjoy the Event ---</h2>
+                </div>
                 <div className="verseOfToday">
                     <VerseOfTheDay/>
+                </div>
+                <div>
+
                 </div>
             </div>
         </div>

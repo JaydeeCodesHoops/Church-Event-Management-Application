@@ -1,32 +1,38 @@
-.buttons{
-    /* padding: 10px; */
-    display: flex;
-    border-radius: 15px;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family:  sans-serif;
-  }
+.head{
+  margin-bottom: 300px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  #btn1, #btn2, #btn3, #btn4{
-    background-color: yellow;
-    cursor: pointer;
-    /* transition: background-color 0.3s, transform 0.3s; */
-    font-size: 16px;
-  }
-  .button1 :hover, .button2 :hover, .button3 :hover, .button4 :hover{
-    /* color:brown; */
-    /* transform: scale(1.1); */
-    background-color: yellow;
-  }
+.header{
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  font-family:  sans-serif;
+  background-color: white;
+}
 
+#btn-, #btn--, #btn---, #btn----{
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: lightyellow;
+}
 
-  .hHeading{
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    font-size: large;
-  }
+#btn-:hover, #btn--:hover, #btn---:hover, #btn----:hover{
+  background-color: yellow;
+}
+
+.hHeading{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: large;
+}

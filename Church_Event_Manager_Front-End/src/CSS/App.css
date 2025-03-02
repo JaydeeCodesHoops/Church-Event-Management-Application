@@ -6,19 +6,6 @@ li{
   list-style: none;
 }
 
-.head{
-  margin: 0;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: '100vh';
-  position: sticky;
-  top: 0;
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 100%);
-}
-
 .reghead{
   margin: 0;
   padding: 30px;
@@ -35,7 +22,6 @@ li{
 .loginBGimage{
   background-image: url('/src/assets/Foundation\ Unity-Cropped.jpg');
   background-size: cover;
-  /* background-position: center; */
   height: 100vh;
   padding: 10px;
   margin: 0 auto;
@@ -49,7 +35,6 @@ li{
 .regBGimage{
   background-image: url('/src/assets/Foundation\ Unity-Cropped.jpg');
   background-size: cover;
-  /* background-position: center; */
   height: 100vh;
   padding: 10px;
   margin: 0 auto;
@@ -126,8 +111,8 @@ li{
   font-size: 30px;
 }
 
-button{
-  background-color: hsl(60, 100%, 50%);
+/* button{
+  background-color: hsl(60, 92%, 85%);
   margin: auto;
   padding: 10px;
   border-radius: 25px;
@@ -135,12 +120,10 @@ button{
   justify-content: center;
   justify-items: center;
   align-items: center;
-}
+} */
 
-button:hover{
-  background-color: white;
-  transform: translateY(4px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+#btn2 :hover{
+  background-color: yellow;
 }
 
 .nameInput{

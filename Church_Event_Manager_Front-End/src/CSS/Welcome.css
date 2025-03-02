@@ -1,9 +1,7 @@
-
 .welcomepage {
-  display: flex;
-  flex-direction: column;
-
+  display: block;
   background-color: white;
+  padding: 20px;
 }
 /* 
 .insideCard{
@@ -36,34 +34,25 @@
   margin-top: 50px;
 } */
 
-  .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .heading{
-    color: yellow;
-    font-family: calibri;
-  }
-
-  .carousel-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 80vh; /* Almost full screen */
-    padding: 20px;
-    gap: 80px;
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Almost full screen */
+  padding: 20px;
+  gap: 100px;
 }
-.carousel {
-    display:  flex;
-    width: 100%;  /* Total width of the whole carousel */
-    height: 60%; /* Total height */
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+.card-slide-show {
+  display:  flex;
+  width: 100%;  /* Total width of the whole carousel */
+  height: 60%; /* Total height */
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 200px;
 }
-.image-container {
+.individual-card {
   position: absolute;
   width: 300px;  /* Each image container width */
   height: 100px;   /* Each image container height */
@@ -75,15 +64,38 @@
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 5px;
+  border-radius: 35px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Adjust values as needed */
   padding: 35px;
   text-align: center;
   font-family: calibri;
 }
 .verseOfToday{
-  border: 6px double black;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url('src/assets/calvary-crosses.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 35px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Adjust values as needed */
+  font-family: calibri;
+  font-size:larger;
+  width: 900px;
+  height: 300px;
+  padding: 30px;
+  color: white;
+}
 
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-family: calibri;
 }

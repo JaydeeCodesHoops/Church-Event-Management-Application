@@ -42,9 +42,9 @@ const VerseOfTheDay = () => {
     if (!verseOfTheDay) return <p>Loading Verse of the Day...</p>;
 
     return (
-        <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", width: "900px", height: "100px", backgroundColor: "black",  color: "white", padding: "10px"}}>
-            <h2>📖 Verse of the Day 📖</h2><br/>
-            <p>"{verseOfTheDay.text}"</p>
+        <div>
+            <h2 style={{textDecoration: "underline"}}>Verse of the Day</h2><br/>
+            <p>"{verseOfTheDay.text}"</p><br/>
             <p>-- {verseOfTheDay.reference} --</p>
         </div>
     );

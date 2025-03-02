@@ -1,15 +1,4 @@
-.head{
-    margin-bottom: 10px;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: '100vh';
-    position: sticky;
-    top: 0;
-    background-color: hsl(0, 0%, 0%);
-    color: hsl(0, 0%, 100%);
-}
+
 
 .attendanceBGimage{
     background-image: url('/src/assets/Foundation\ Unity-Cropped.jpg');
