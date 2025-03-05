@@ -139,17 +139,18 @@ const EventList1 = () => {
 
     return(
         <>
+     
+        <div className="adminBGimage">
         <div className="welcomeA">
-            <div>
-                <h1 style={{fontSize: 50, marginRight: 0}}> Welcome Admin </h1>
+            <div style={{fontSize: 35, marginLeft: 0}}>
+                <h1> Welcome Admin </h1>
             </div>
             <div className="btns">
-            <button style={{marginRight: '20px'}} onClick={handleClick2}> View All Users </button>
-                <button style={{marginRight: '20px'}} onClick={handleClick1}> View Attendance </button>
-                <button onClick={handleClick}> Logout </button>
+                <button id="viewAllUsers" onClick={handleClick2}> View All Users </button>
+                <button id="viewAttendance" onClick={handleClick1}> View Attendance </button>
+                <button id="logoutBtn" onClick={handleClick}> Logout </button>
             </div>       
         </div>
-        <div className="adminBGimage">
         <div className="bodyA">
             <Form1
                 addEvent={addEvent}

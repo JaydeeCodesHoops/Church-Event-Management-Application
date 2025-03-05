@@ -55,32 +55,34 @@ const Users = () => {
 
     return (
         <>
-            <div className="head">
-                <h1 style={{ fontSize: 50 }}> All Users </h1>
-                <button id="btn2" onClick={handleBack}>
-                    Back
-                </button>
-            </div>
             <div className="userBGimage">
+            <div className="userHead">
+                <div style={{ fontSize: 35, marginLeft: 0 }}>
+                    <h1> All Users </h1>
+                </div>
+                <div className="btns">
+                    <button id="btn2" onClick={handleBack}>
+                        Back
+                    </button>
+                </div>
+            </div>
             <div className="userList">
                 {users.map(user => (
                     <div key={user.id} className="userWrapper">
-                        <div className="viewUsers">
-                        <div>
+                        <div className="userDetails">
                             <h2>{user.name}</h2>
-                            <p style={{fontSize: 20}}><span style={{fontWeight: 'bold'}}>Email:</span> {user.email}</p>
-                            <p style={{fontSize: 20}}><span style={{fontWeight: 'bold'}}>Role:</span> {user.role}</p>
+                            <p style={{fontSize: 25}}><span style={{fontWeight: 'bold'}}>Email:</span> {user.email}</p>
+                            <p style={{fontSize: 25}}><span style={{fontWeight: 'bold'}}>Role:</span> {user.role}</p>
                         </div>
-                        <div>
+                        <div className="deleteBtn">
                             {user.role === 'congregant' && (
                             <button 
-                                style={{ backgroundColor: "red", color: "white", border: "none", padding: "5px 10px", cursor: "pointer", fontSize: 15 }}
+                                id="deleteUser"
                                 onClick={() => handleDelete(user.id)}
                             >
                                 Delete
                             </button>
                             )}
-                        </div>
                         </div>
                     </div>
                 ))}

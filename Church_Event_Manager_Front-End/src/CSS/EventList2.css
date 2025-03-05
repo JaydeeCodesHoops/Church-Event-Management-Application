@@ -1,37 +1,40 @@
 .welcomeC{
-    margin: 0;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: '100vh';
-    position: sticky;
-    top: 0;
-    background-color: hsl(0, 0%, 0%);
-    color: hsl(0, 0%, 100%);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  width: '100vh';
+  color: black;
+  }
+
+  .welcomeCButton{
+      margin-right: 0;
+      display: flex;
+      gap: 20px;
   }
 
   .eventWrapper{
     margin-bottom: 20px;
     padding: 10px;
     border: 3px solid yellow;
-    border-radius: 8px;
     background-color: #b45353;
-    width: 75vw;
+    width: 75%;
+    display: flex;
+    align-items: center;
   }
 
   .userWrapper{
+    display: flex;
     margin-bottom: 20px;
     padding: 10px;
     border: 3px solid yellow;
-    border-radius: 8px;
+    border-radius: 75px;
     background-color: #b45353;
-    width: 75vw;
+    width: 50vw;
+    font-size: 20px;
   }
 
   .viewEvents{
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
@@ -41,15 +44,33 @@
     align-items: center;
   }
 
+  .userDetails{
+    margin-left: 50px;
+  }
+  .deleteBtn{
+    margin: 25px;
+    margin-right: 50px;
+  }
+
   .attendanceBtns button{
-    margin-top: 10px;
-    padding: 5px 10px;
-    font-size: 16px;
+    padding: 15px;
+    border-radius: 35px;
+    font-size: 18px;
     cursor: pointer;
+    background-color: lightyellow;
+    margin: 10px 6px;
+  }
+
+  .attendanceBtns{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    font-family: calibri;
+    font-weight: bold;
   }
 
 .attendanceBtns button:hover{
-  background-color: #1eff00;
+  background-color: yellow;
 }
 
 .Hp{
@@ -107,4 +128,40 @@
   height: 100vh;
   background-attachment: fixed;
   overflow: auto;
+}
+
+.userHead{
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  width: '100vh';
+  color: black;
+}
+
+#btn2{
+  padding: 15px;
+  border-radius: 35px;
+  font-size: 18px;
+  background-color: lightyellow;
+}
+#btn2:hover{
+  background-color: yellow;
+}
+
+#deleteUser{
+  border-radius: 35px;
+  font-size: 20px;
+  border:  2px solid yellow;
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+#deleteUser:hover{
+  background-color: rgb(245, 147, 147);
+}
+
+.eventItemC{
+  margin-left: 50px;
+  font-family: calibri;
 }

@@ -62,40 +62,47 @@ const ViewAttendance = () => {
 
     return (
         <>
-            <div className="head">
-                <h1 style={{ fontSize: 50 }}> Total Attendance </h1>
-                <button id="btn2" onClick={handleClick}>
-                    Back
-                </button>
-            </div>
-    
-            {loading ? (
-                <p>Loading events...</p>
-            ) : events.length === 0 ? (
-                <div style={{ fontSize: 35, textAlign: 'center', marginTop: '20px', color: 'red'}}>
-                    <p>No events available.</p>
+            <div className="attendanceBGimage">
+                <div className="attendanceHead">
+                    <div style={{ fontSize: 35, marginLeft: 0 }}>
+                        <h1>Total Attendance</h1>
+                    </div>
+                    <div className="btns">
+                        <button id="btn2" onClick={handleClick}>
+                            Back
+                        </button>
+                    </div>
                 </div>
-            ) : (
-                <div className="attendanceBGimage">
-                <div className="eventList">
-                    {events.map((event) => (
-                        <div key={event.id} className="eventWrapper">
-                            <div className="viewEvents">
-                                <div>
-                                    <EventItem2 event={event} /> {/* Display event details */}
-                                </div>
-                                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                                    <p style={{fontWeight: 'bold', fontSize: 20}}>Total Attendance</p>
-                                    <p style={{fontWeight: 'bold', fontSize: 30}}>{event.yesCount}</p> {/* Display the Yes count */}
-                                </div>
-                            </div>
+                
+                <div className="attendanceList">
+                    {loading ? (
+                        <p>Loading events...</p>
+                    ) : events.length === 0 ? (
+                        <div className="noEvents">
+                            <p>No events available.</p>
                         </div>
-                    ))}
+                    ) : (
+                        <div className="eventList">
+                            {events.map((event) => (
+                                <div key={event.id} className="eventWrapper">
+                                    <div className="viewEvents">
+                                        <div className="eventDetails">
+                                            <EventItem2 event={event} />
+                                        </div>
+                                        <div className="attendanceCount">
+                                            <p className="attendanceLabel">Total Attendance</p>
+                                            <p className="attendanceNumber">{event.yesCount}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
                 </div>
-                </div>
-            )}
+            </div>
         </>
     );
+    
     
 };
 

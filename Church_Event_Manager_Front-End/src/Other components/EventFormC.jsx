@@ -106,16 +106,16 @@ const EventAttendance = () => {
       <div className="eventList">
         {filteredEvents.map((event) => (
           <div key={event.id} className="eventWrapper">
-            <div className="viewEvents">
-              <div>
+              <div className="eventItemC">
                 <EventItem2 event={event} />
               </div>
               <div className="attendanceBtns">
-                <p>Attendance</p>
-                <button onClick={() => handleAttendance(event.id, "Yes")}>Yes</button>
-                <button onClick={() => handleAttendance(event.id, "No")}>No</button>
+                <p>Attend</p>
+                <div>
+                  <button onClick={() => handleAttendance(event.id, "Yes")}>Yes</button>
+                  <button onClick={() => handleAttendance(event.id, "No")}>No</button>
+                </div>
               </div>
-            </div>
           </div>
         ))}
       </div>

@@ -44,10 +44,10 @@ function Register(){
 
     return(
         <>
+        <div className="regBGimage">
             <div className="reghead">
                 <Header/>
             </div>
-            <div className="regBGimage">
             <div className="register">
                 <div className="registerTitle">
                     <h2>Register page</h2>
@@ -88,9 +88,9 @@ function Register(){
                         {error && <p style={{ color: 'red' }}>{error}</p>}
                         {success && <p style={{color: 'lightgreen'}}>{success}</p>}
                     </div>
-                    <div className="Reg-Home">
-                        <button type="submit">Register</button>
-                        <button onClick={handleRedirect}>Home</button>
+                    <div className="Reg-Login-Home">
+                        <button id="regLoginBtn" type="submit">Register</button>
+                        <button id="regLoginHomeBtn" onClick={handleRedirect}>Home</button>
                     </div>
                 </form>
                 </div>

@@ -4,7 +4,8 @@ import '../CSS/EventList1.css'
 const EventItem = ({event, deleteEvent, setCurrentEvent}) => {
     return(
         <>
-            <div>
+        <div className="eventItem">
+            <div className="eventInfo">
                 <p style={{fontSize:20}}><span style={{fontWeight: 'bold'}}>Title:</span> {event.title}</p>
                 <p style={{fontSize:20}}><span style={{fontWeight: 'bold'}}>Description:</span> {event.description}</p>
                 <p style={{fontSize:20}}><span style={{fontWeight: 'bold'}}>Location:</span> {event.location}</p>
@@ -14,6 +15,7 @@ const EventItem = ({event, deleteEvent, setCurrentEvent}) => {
                 <button onClick={() => setCurrentEvent(event)}>Edit</button>
                 <button style={{marginBottom: '10px'}} onClick={() => deleteEvent(event.id)}>Delete</button>
             </div>
+        </div>
         </>
     );
 };

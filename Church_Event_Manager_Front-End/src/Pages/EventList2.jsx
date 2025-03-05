@@ -12,11 +12,16 @@ const EventList2 = () => {
 
     return(
         <>
-        <div className="welcomeC">
-            <h1 style={{fontSize: 50}}> Welcome Congregant </h1>
-            <button id="btn2" onClick={handleClick}> Logout </button>
-        </div>
+       
         <div className="congregantBGimage">
+            <div className="welcomeC">
+                <div style={{ fontSize: 35, marginLeft: 0 }}>
+                    <h1 style={{fontSize: 50}}> Welcome Congregant </h1>
+                </div>
+                <div className="welcomeCButton">
+                    <button id="btn2" onClick={handleClick}> Logout </button>
+                </div>
+            </div>
             <div className="bodyC">
                 <Form2/>
             </div>

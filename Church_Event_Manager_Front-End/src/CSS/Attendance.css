@@ -1,10 +1,41 @@
-
-
 .attendanceBGimage{
     background-image: url('/src/assets/Foundation\ Unity-Cropped.jpg');
     background-size: cover;
     width: 100vw;
     height: 100vh;
     background-attachment: fixed;
-    overflow: auto; 
+    overflow: auto;
+}
+.attendanceHead{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    width: '100vh';
+    color: black;
+}
+.attendanceList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.eventWrapper{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 3px solid yellow;
+    border-radius: 75px;
+    background-color: #b45353;
+    width: 50vw;
+    font-size: 20px;
+}
+
+.eventDetails{
+    margin-left: 50px;
+}
+.attendanceCount{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
 }

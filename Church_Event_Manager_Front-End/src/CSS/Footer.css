@@ -1,24 +1,21 @@
 .footAboutBox{
     display: flex;
     background-color: rgb(226, 204, 204);
-    margin-bottom: 0px;
 }
 
 .aboutBoxMiddle{
     flex: 3;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     color: white;
     /* Allow vertical scrolling */
     overflow-y: auto; /* Enables scrolling when needed */
-    text-align: center;
+    /* text-align: left; */
     margin: auto;
     margin-top: 30px;
     background-color: rgb(226, 204, 204);
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
 }
 
 .leftBox{
@@ -75,7 +72,41 @@
     display: flex;
     gap: 250px;
     font-family: calibri;
-    text-align: left;
     color: brown;
 }
 
+.events{
+    background-color: rgb(226, 204, 204);    
+    padding: 20px;
+    text-align: left;
+}
+
+.contact{
+    background-color: rgb(226, 204, 204);    
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-events{
+    font-size: 30px; /* Large heading */
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.footer-contact{
+    font-size: 30px; /* Large heading */
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.events-text{
+    font-size: 20px; /* Smaller text */
+    color: #555;
+    margin: 7px 0; /* Slight spacing between text lines */
+}
+
+.contact-text{
+    font-size: 20px; /* Smaller text */
+    color: #555;
+    margin: 7px 0; /* Slight spacing between text lines */
+}

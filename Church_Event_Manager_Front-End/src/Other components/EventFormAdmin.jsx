@@ -61,9 +61,10 @@ const EventForm = ({ addEvent, updateEvent, currentEvent, setCurrentEvent}) => {
     return (
         <form className="AdminForm" onSubmit={handleSubmit}>
             <div className="form1">
-                <div>
+                <div className="form1">
                     <label style={{fontSize: 25, color: 'white', marginBottom: '5px'}}>Title:</label>
                     <input
+                        className="addEventTitle"
                         type="text"
                         placeholder="Title"
                         value={Title}
@@ -71,27 +72,30 @@ const EventForm = ({ addEvent, updateEvent, currentEvent, setCurrentEvent}) => {
                         required
                     />
                 </div>
-                <div>
+                <div className="form1">
                     <label style={{fontSize: 25, color: 'white', marginBottom: '5px'}}>Description:</label>
                     <textarea
+                        className="addEventDescription"
                         placeholder="Description"
                         value={Description}
                         onChange={(e) => setDescription(e.target.value)}
                         required
                     />
                 </div>
-                <div>
+                <div className="form1">
                     <label style={{fontSize: 25, color: 'white', marginBottom: '5px'}}>Location:</label>
                     <textarea
+                        className="addEventLocation"
                         placeholder="Loction"
                         value={Location}
                         onChange={(e) => setLocation(e.target.value)}
                         required
                     />
                 </div>
-                <div>
+                <div className="form1">
                     <label style={{fontSize: 25, color: 'white', marginBottom: '5px'}}>Date:</label>
                     <input
+                        className="addEventDate"
                         type="datetime-local"
                         value={Date}
                         onChange={(e) => setDate(e.target.value)}
@@ -102,11 +106,11 @@ const EventForm = ({ addEvent, updateEvent, currentEvent, setCurrentEvent}) => {
                     {loading && <p>...loading...</p>}
                     {error && <p style={{ color: 'red' }}>{error}</p>}
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between'}}>
+                <div>
                     <button id="updateB" type="submit">
                         {currentEvent? 'Update Event' : 'Add Event'}
                     </button>
-                    {currentEvent && <button type="button" onClick={() => setCurrentEvent(null)}>Cancel</button>}
+                    {currentEvent && <button id="cancelB" type="button" onClick={() => setCurrentEvent(null)}>Cancel</button>}
                 </div>
             </div>
         </form>

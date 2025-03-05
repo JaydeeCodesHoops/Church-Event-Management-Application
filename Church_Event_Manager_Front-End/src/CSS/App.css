@@ -1,5 +1,5 @@
 *{
-  margin: 0;
+  margin: 0 auto;
 }
 
 li{
@@ -7,28 +7,35 @@ li{
 }
 
 .reghead{
-  margin: 0;
   padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: '100vh';
-  position: sticky;
-  top: 0;
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 100%);
+  width: 100%;
+  font-size: large;
+  font-family:  sans-serif;
+}
+
+.loghead{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: large;
+  font-family:  sans-serif;
 }
 
 .loginBGimage{
   background-image: url('/src/assets/Foundation\ Unity-Cropped.jpg');
   background-size: cover;
   height: 100vh;
-  padding: 10px;
-  margin: 0 auto;
-  display: block;
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: '100vh';
+  width: 100vw;
   background-color: hsl(200, 3%, 79%);
 }
 
@@ -36,12 +43,13 @@ li{
   background-image: url('/src/assets/Foundation\ Unity-Cropped.jpg');
   background-size: cover;
   height: 100vh;
-  padding: 10px;
-  margin: 0 auto;
-  display: block;
+  /* padding: 10px; */
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: '100vh';
+  width: 100vw;
   background-color: hsl(200, 3%, 79%);
 }
 
@@ -53,11 +61,10 @@ li{
   width: 35vw;
   background-color: maroon;
   border: 3px solid yellow;
-  border-radius: 15px;
+  border-radius: 75px;
   color: rgb(165, 155, 61); 
   height: 500px;
   margin: auto;
-  margin-top: 50px;
 }
 
 .register{
@@ -68,17 +75,37 @@ li{
   width: 35vw;
   background-color: maroon;
   border: 3px solid yellow;
-  border-radius: 15px;
+  border-radius: 75px;
   color: rgb(165, 155, 61);
   height: 500px;
   margin: auto;
-  margin-top: 50px;
+}
+
+#regLoginBtn{
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: lightyellow;
+}
+
+#regLoginHomeBtn{
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: lightyellow;
+}
+
+#regLoginBtn:hover, #regLoginHomeBtn:hover{
+  background-color: yellow;
 }
 
 .registerPage{
   background-image: url('/src/assets/Foundation\ Unity-Cropped.jpg');
   background-size: cover;
-    /* background-position: center; */
     height: 100vh;
     padding: 10px;
     display: block;
@@ -129,41 +156,77 @@ li{
 .nameInput{
   display: flex;
   padding: 10px;
+  border-radius: 15px;
 }
 
 .emailInput{
   display: flex;
   padding: 10px;
+  border-radius: 15px;
 }
 
 .passwordInput{
   display: flex;
   padding: 10px;
   margin-bottom: 20px;
+  border-radius: 15px;
 }
 
 .error-Success{
   margin-bottom: 20px;
 }
 
-.Reg-Home{
+.Reg-Login-Home{
   display: flex;
+  gap: 20px;
 }
 
 .error{
   margin-bottom: 20px;
 }
 
-.Login-Home{
-  display: flex;
-}
-
 form{
-  display: flex;
-  flex-direction: column;
   margin-top: 60px;
 }
 
 form div{
   margin-bottom: 15px;
+}
+.addEventTitle{
+  display: flex;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.addEventDescription{
+  display: flex;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.addEventLocation{
+  display: flex;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.addEventDate{
+  display: flex;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+#cancelB{
+  margin: 20px;
+  padding: 15px;
+  border-radius: 35px;
+  font-size: 18px;
+  background-color: lightyellow;
+}
+#cancelB:hover{
+  background-color: yellow;
+}
+
+.form1{
+  
 }

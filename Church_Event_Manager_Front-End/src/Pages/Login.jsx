@@ -67,10 +67,10 @@ function Login(){
 
     return(
         <>
-            <div className="head">
+        <div className="loginBGimage">
+            <div className="loghead">
                 <Header/>
             </div>
-            <div className="loginBGimage">
             <div className="login">
                 <div className="loginTitle">
                     <h2>Login page</h2>
@@ -99,9 +99,9 @@ function Login(){
                     <div className="error">
                         {error && <p style={{ color: 'red' }}>{error}</p>}
                     </div>
-                    <div className="Login-Home">
-                        <button type="submit">Login</button>
-                        <button onClick={handleRedirect}>Home</button>
+                    <div className="Reg-Login-Home">
+                        <button id="regLoginBtn" type="submit">Login</button>
+                        <button id="regLoginHomeBtn" onClick={handleRedirect}>Home</button>
                     </div>
                 </form>
             </div>
