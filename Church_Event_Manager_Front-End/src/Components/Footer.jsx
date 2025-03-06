@@ -15,7 +15,7 @@ export default function Footer(){
             </div>
             <div className="aboutBoxMiddle">
                 <div style={{padding: "20px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
-                    <h4 style={{ color: "black", fontSize:  "25px", fontFamily: "calibri"}}>This is an Event Manager Application produced  The Bishop E.P Clark Youth Foundation</h4><br/>
+                    <h4 style={{ color: "black", fontSize:  "25px", fontFamily: "calibri"}}>This is an Event Manager Application produced for `The Bishop E.P Clark Youth Foundation`</h4><br/>
                 </div>
                 <div className="threeBoxes">
                     <div className="events">

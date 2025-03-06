@@ -86,7 +86,7 @@ const EventForm = ({ addEvent, updateEvent, currentEvent, setCurrentEvent}) => {
                     <label style={{fontSize: 25, color: 'white', marginBottom: '5px'}}>Location:</label>
                     <textarea
                         className="addEventLocation"
-                        placeholder="Loction"
+                        placeholder="Location"
                         value={Location}
                         onChange={(e) => setLocation(e.target.value)}
                         required
